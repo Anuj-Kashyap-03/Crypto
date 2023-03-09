@@ -86,9 +86,9 @@ function DrawerAppBar(props) {
   React.useEffect(() => {
     if (props.activate) {
       const links = document.getElementsByClassName(props.activate);
-      console.log("links",links)
+      console.log("links", links);
       for (let i = 0; i < links.length; i++) {
-        console.log(i,links[i])
+        console.log(i, links[i]);
         links[i].style.color = "blue";
       }
     }
@@ -105,14 +105,15 @@ function DrawerAppBar(props) {
         },
       }}
     >
+      <CloseButtondiv>
+        <div>
+          <IconButton onClick={handleDrawerToggle}>
+            <ClearSharpIcon fontSize="small" />
+          </IconButton>
+        </div>
+      </CloseButtondiv>
+
       <Link href="/">
-        <CloseButtondiv>
-          <div>
-            <IconButton onClick={handleDrawerToggle}>
-              <ClearSharpIcon fontSize="small" />
-            </IconButton>
-          </div>
-        </CloseButtondiv>
         <Typography variant="h5" style={{ fontWeight: "700" }} sx={{ my: 2 }}>
           Crypto.com
         </Typography>

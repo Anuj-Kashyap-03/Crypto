@@ -22,6 +22,6 @@ body {
 }
 
 .s_b_c_m {
-  background-color: rgb(6, 17, 33);
+  background-color: rgb(6, 17, 33) !important;
 }
 
