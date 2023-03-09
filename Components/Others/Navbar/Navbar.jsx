@@ -86,9 +86,7 @@ function DrawerAppBar(props) {
   React.useEffect(() => {
     if (props.activate) {
       const links = document.getElementsByClassName(props.activate);
-      console.log("links", links);
       for (let i = 0; i < links.length; i++) {
-        console.log(i, links[i]);
         links[i].style.color = "blue";
       }
     }

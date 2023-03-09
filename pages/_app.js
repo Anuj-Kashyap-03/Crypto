@@ -1,11 +1,9 @@
-import Footer from '../Components/Others/Footer/Footer'
-import TopCoinsCarosule from "../Components/Others/Populercoins/TopCoins";
+import Footer from "../Components/Others/Footer/Footer";
 import styled from "@emotion/styled";
-
-
-import '../styles/globals.css'
-import Head from 'next/head';
-
+import Ad from "../Components/Ads/Ad";
+import TopCoinsCarosule from "../Components/Others/Populercoins/TopCoins";
+import "../styles/globals.css";
+import LoadScript from "../Components/Ads/LoadScript";
 
 const TopCarsolulediv = styled("div")({
   marginTop: "150px",
@@ -15,22 +13,22 @@ const TopCarsolulediv = styled("div")({
   },
 });
 
-
-
 function MyApp({ Component, pageProps }) {
-  return <>
-    <Head>
-      <link rel="icon" href=
-        "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
-        type="image/x-icon"></link>
-    </Head>
-    <TopCarsolulediv>
-      <TopCoinsCarosule />
-    </TopCarsolulediv>
-    <Component {...pageProps} />
+  return (
+    <>
 
-    <Footer />
-  </>
+      <TopCarsolulediv>
+        <TopCoinsCarosule />
+      </TopCarsolulediv>
+      
+      <Component {...pageProps} />
+
+      <Footer />
+      
+      <LoadScript />
+      
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

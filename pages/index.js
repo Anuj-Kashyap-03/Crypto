@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Home from '../Components/Home/Home'
 import styles from '../styles/Home.module.css'
 import Navbar from '../Components/Others/Navbar/Navbar'
+import Ad from '../Components/Ads/Ad'
 
 
 export default function Index() {
